@@ -37,11 +37,8 @@
 .social i#linkedin:hover {
   color: #0177B5;
 }
-.social i#code:hover {
-  color: #29A329;
-}
-.social i#stack:hover {
-  color: #ED780E;
+.social i#facebook:hover {
+  color: #3b5998;
 }
 .social i#plus:hover {
   color: #D43402;

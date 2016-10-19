@@ -7,6 +7,7 @@ $(window).load(function() {
 
   var twitterPos = $('#twitter').position();
   var githubPos = $('#github').position();
+  var facebookPos = $('#facebook').position();
   var linkedinPos = $('#linkedin').position();
   var plusPos = $('#plus').position();
   var mailPos = $('#mail').position();
@@ -44,11 +45,23 @@ $(window).load(function() {
       left: githubPos.left
     }, 250);
     
-    $('#linkedin').animate({
-      top: linkedinPos.top + 10,
-      left: linkedinPos.left - 3
+    $('#facebook').animate({
+      top: facebookPos.top + 10,
+      left: facebookPos.left - 3
     }, 500);
   }, 750);
+  
+  setTimeout(function() {
+    $('#facebook').animate({
+      top: facebookPos.top,
+      left: facebookPos.left
+    }, 250);
+    
+    $('#linkedin').animate({
+      top: linkedinPos.top + 10,
+      left: linkedinPos.left
+    }, 500);
+  }, 1000);
   
   setTimeout(function() {
     $('#linkedin').animate({
@@ -58,9 +71,9 @@ $(window).load(function() {
     
     $('#plus').animate({
       top: plusPos.top + 10,
-      left: plusPos.left
+      left: plusPos.left + 3
     }, 500);
-  }, 1000);
+  }, 1250);
   
   setTimeout(function() {
     $('#plus').animate({
@@ -70,15 +83,15 @@ $(window).load(function() {
     
     $('#mail').animate({
       top: mailPos.top + 10,
-      left: mailPos.left + 3
+      left: mailPos.left + 6
     }, 500);
-  }, 1250);
+  }, 1500);
   
   setTimeout(function() {
     $('#mail').animate({
       top: mailPos.top,
       left: mailPos.left
     }, 250);
-  }, 1500);
+  }, 1750);
   
 })
