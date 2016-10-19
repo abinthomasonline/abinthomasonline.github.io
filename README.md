@@ -1,5 +1,5 @@
 # abinthomasonline.github.io
 
-shamelessly copied...
+shamelessly copied & u call it forked :P
 
-find me here ;)
+
