@@ -1,5 +1,5 @@
 <script type="text/javascript">
-	let url = new URL(document.getElementById("iframe_id").contentWindow.location.href);
+	let url = new URL(window.location.href);
 	let searchParams = new URLSearchParams(url.search);
 	// console.log(searchParams.get('access_token'));
 	function copyToClipboard(key) {
