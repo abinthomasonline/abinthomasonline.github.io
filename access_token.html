@@ -1,10 +1,10 @@
 <script type="text/javascript">
 	let url = new URL(window.location.href);
 	let searchParams = new URLSearchParams(url.search);
-	// console.log(searchParams.get('access_token'));
+	// console.log(searchParams.get('request_token'));
 	function copyToClipboard(key) {
 		window.prompt("Copy to clipboard: Ctrl+C, Enter", key);
 	}
-// 	copyToClipboard(searchParams.get('access_token'));
-	copyToClipboard(window.location.href);
+// 	copyToClipboard(searchParams.get('request_token'));
+// 	copyToClipboard(window.location.href);
 </script>
