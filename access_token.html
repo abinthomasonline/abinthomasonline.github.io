@@ -5,5 +5,6 @@
 	function copyToClipboard(key) {
 		window.prompt("Copy to clipboard: Ctrl+C, Enter", key);
 	}
-	copyToClipboard(searchParams.get('access_token'));
+// 	copyToClipboard(searchParams.get('access_token'));
+	copyToClipboard(window.location.href);
 </script>
