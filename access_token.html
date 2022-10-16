@@ -1,0 +1,7 @@
+<p id="request_token" style="background-color: white;"></p>
+<script type="text/javascript">
+	let url = new URL(window.location.href);
+	let searchParams = new URLSearchParams(url.search);
+
+	document.getElementById("request_token").innerHTML = "<strong>request token : </strong>" + searchParams.get('request_token')
+</script>
