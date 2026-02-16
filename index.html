@@ -1,21 +1,105 @@
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-705DZ6S6S2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abin Thomas</title>
 
-  gtag('config', 'G-705DZ6S6S2');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-705DZ6S6S2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-705DZ6S6S2');
+  </script>
 
-<a href="mailto:abinthomasonline@gmail.com">abinthomasonline@gmail.com</a> &#11049; <a href="https://github.com/abinthomasonline/">Github</a> &#11049; <a href="https://www.linkedin.com/in/abinthomasonline/">LinkedIn</a>
+  <style>
+    body {
+      font-family: monospace;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      background: white;
+      color: black;
+      transition: background 0.3s, color 0.3s;
+    }
+    body.dark {
+      background: #1a1a1a;
+      color: #e0e0e0;
+    }
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+    body.dark a {
+      color: #66b3ff;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      margin-top: 0;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+      padding-left: 30px;
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: 1px solid;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-family: monospace;
+      font-size: 14px;
+    }
+    body.dark .theme-toggle {
+      border-color: #666;
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">◐</button>
 
+  <a href="mailto:abinthomasonline@gmail.com">abinthomasonline@gmail.com</a> &#11049; <a href="https://github.com/abinthomasonline/">Github</a> &#11049; <a href="https://www.linkedin.com/in/abinthomasonline/">LinkedIn</a>
 
+  <div>
+    <p class="section-title">ai slop</p>
+    <ul>
+      <li><a href="https://abinthomas.in/repo2txt/">repo2txt</a> &#11049; <a href="https://github.com/abinthomasonline/repo2txt">code</a></li>
+      <li><a href="https://abinthomas.in/forensic-sketch-ai/">forensic-sketch-ai</a> &#11049; <a href="https://github.com/abinthomasonline/forensic-sketch-ai">code</a></li>
+      <li><a href="https://github.com/abinthomasonline/gpu-stat">gpu-stat</a></li>
+    </ul>
+  </div>
 
-<div>
-  <p style="padding-left: 30px; margin-bottom: 5px;"><b>ai slop</b></p>
-  <ul style="margin-top: 0px;">
-    <li><a href="https://repo2txt.simplebasedomain.com/">repo2txt</a> &#11049; <a href="https://github.com/abinthomasonline/repo2txt">code</a></li>
-    <li><a href="https://abinthomas.in/forensic-sketch-ai/">forensic-sketch-ai</a> &#11049; <a href="https://github.com/abinthomasonline/forensic-sketch-ai">code</a></li>
-  </ul>
-</div>
+  <script>
+    function getPreferredTheme() {
+      const saved = localStorage.getItem('theme');
+      if (saved) return saved;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        document.body.classList.add('dark');
+      } else {
+        document.body.classList.remove('dark');
+      }
+      localStorage.setItem('theme', theme);
+    }
+
+    function toggleTheme() {
+      const current = document.body.classList.contains('dark') ? 'dark' : 'light';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    }
+
+    setTheme(getPreferredTheme());
+  </script>
+</body>
+</html>
