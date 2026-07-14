@@ -62,12 +62,63 @@
       border-color: #666;
       color: #e0e0e0;
     }
+    .project-update {
+      margin: 28px 0;
+      padding: 14px 16px 16px;
+      border: 1px solid #b7b7b7;
+      border-left: 3px solid blue;
+      background: #f7f7f7;
+      font-family: inherit;
+    }
+    .project-update p {
+      margin: 0;
+    }
+    .project-update .project-update-label {
+      margin-bottom: 8px;
+    }
+    .project-update .project-update-headline {
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+    .project-update .project-update-body {
+      margin-bottom: 10px;
+    }
+    .project-update-link {
+      display: inline-block;
+      max-width: 100%;
+      font-weight: bold;
+    }
+    .project-update-link:focus-visible {
+      outline: 2px solid blue;
+      outline-offset: 3px;
+    }
+    body.dark .project-update {
+      background: #222;
+      border-color: #666;
+      border-left-color: #66b3ff;
+    }
+    body.dark .project-update-link:focus-visible {
+      outline-color: #66b3ff;
+    }
+    @media (max-width: 480px) {
+      .project-update {
+        margin: 24px 0;
+        padding: 12px 14px 14px;
+      }
+    }
   </style>
 </head>
 <body>
   <button class="theme-toggle" onclick="toggleTheme()">◐</button>
 
   <a href="mailto:abinthomasonline@gmail.com">abinthomasonline@gmail.com</a> &#11049; <a href="https://github.com/abinthomasonline/">Github</a> &#11049; <a href="https://www.linkedin.com/in/abinthomasonline/">LinkedIn</a>
+
+  <aside class="project-update" aria-labelledby="paperpmf-update-title">
+    <p class="project-update-label">[new project / paperpmf.com]</p>
+    <p class="project-update-headline" id="paperpmf-update-title">Test the signal before you fund the launch.</p>
+    <p class="project-update-body">A rapid synthetic purchase-intent diagnostic for product concepts.</p>
+    <a class="project-update-link" href="https://paperpmf.com/?utm_source=abinthomas.in&amp;utm_medium=referral&amp;utm_campaign=paperpmf_crosspromo_2026&amp;utm_content=project_update#diagnostic-intake">run a free 10-person diagnostic →</a>
+  </aside>
 
   <div>
     <p class="section-title">ai slop</p>
