@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64" role="img" aria-label="Abin Thomas">
+  <rect width="64" height="64" rx="14" fill="#f8f5ed"/>
+  <path d="M13 35c-2-11 5-22 17-24 12-2 23 5 25 17 2 10-3 22-15 25-13 4-25-5-27-18Z" fill="#181714"/>
+  <ellipse cx="29" cy="30" rx="6" ry="8" fill="#f8f5ed"/>
+  <ellipse cx="42" cy="29" rx="6" ry="8" fill="#f8f5ed"/>
+  <circle cx="31" cy="32" r="2.5" fill="#181714"/>
+  <circle cx="44" cy="31" r="2.5" fill="#181714"/>
+  <rect x="47" y="8" width="10" height="10" rx="2" fill="#146ef5"/>
+</svg>

@@ -1,0 +1,30 @@
+{
+  "name": "Abin Thomas — Software & AI Projects",
+  "short_name": "Abin Thomas",
+  "description": "Open-source software and AI experiments by Abin Thomas.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#f8f5ed",
+  "theme_color": "#181714",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

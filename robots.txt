@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abinthomas.in/sitemap.xml
+Sitemap: https://abinthomas.in/repo2txt/sitemap.xml
+Sitemap: https://abinthomas.in/forensic-sketch-ai/sitemap.xml

@@ -3,7 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abin Thomas</title>
+  <title>Abin Thomas — Software &amp; AI Projects</title>
+  <meta name="description" content="Personal site of Abin Thomas, featuring open-source software and AI experiments including repo2txt and Forensic Sketch AI.">
+  <meta name="author" content="Abin Thomas">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://abinthomas.in/">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Abin Thomas">
+  <meta property="og:title" content="Abin Thomas — Software &amp; AI Projects">
+  <meta property="og:description" content="Open-source software and AI experiments by Abin Thomas.">
+  <meta property="og:url" content="https://abinthomas.in/">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:image" content="https://abinthomas.in/images/og-abin-thomas.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A playful ink-blob mascot connecting modular software components">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abin Thomas — Software &amp; AI Projects">
+  <meta name="twitter:description" content="Open-source software and AI experiments by Abin Thomas.">
+  <meta name="twitter:image" content="https://abinthomas.in/images/og-abin-thomas.jpg">
+  <meta name="twitter:image:alt" content="A playful ink-blob mascot connecting modular software components">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://abinthomas.in/#website",
+          "url": "https://abinthomas.in/",
+          "name": "Abin Thomas",
+          "description": "Open-source software and AI experiments by Abin Thomas.",
+          "image": "https://abinthomas.in/images/og-abin-thomas.jpg",
+          "inLanguage": "en-IN"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://abinthomas.in/#person",
+          "name": "Abin Thomas",
+          "url": "https://abinthomas.in/",
+          "image": "https://abinthomas.in/images/og-abin-thomas.jpg",
+          "email": "mailto:abinthomasonline@gmail.com",
+          "sameAs": [
+            "https://github.com/abinthomasonline/",
+            "https://www.linkedin.com/in/abinthomasonline/"
+          ]
+        }
+      ]
+    }
+  </script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-705DZ6S6S2"></script>
@@ -100,6 +159,23 @@
     body.dark .project-update-link:focus-visible {
       outline-color: #66b3ff;
     }
+    .site-header {
+      margin-bottom: 28px;
+    }
+    .site-title {
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: 1.3;
+    }
+    .site-intro {
+      margin: 4px 0 10px;
+    }
+    .contact-links {
+      line-height: 1.8;
+    }
+    .section-title {
+      font-size: 1em;
+    }
     @media (max-width: 480px) {
       .project-update {
         margin: 24px 0;
@@ -109,26 +185,34 @@
   </style>
 </head>
 <body>
-  <button class="theme-toggle" onclick="toggleTheme()">◐</button>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle color theme" title="Toggle color theme">◐</button>
 
-  <a href="mailto:abinthomasonline@gmail.com">abinthomasonline@gmail.com</a> &#11049; <a href="https://github.com/abinthomasonline/">Github</a> &#11049; <a href="https://www.linkedin.com/in/abinthomasonline/">LinkedIn</a>
+  <header class="site-header">
+    <h1 class="site-title">Abin Thomas</h1>
+    <p class="site-intro">Software projects and AI experiments.</p>
+    <nav class="contact-links" aria-label="Contact and profiles">
+      <a href="mailto:abinthomasonline@gmail.com">abinthomasonline@gmail.com</a> &#11049; <a rel="me" href="https://github.com/abinthomasonline/">GitHub</a> &#11049; <a rel="me" href="https://www.linkedin.com/in/abinthomasonline/">LinkedIn</a>
+    </nav>
+  </header>
 
-  <aside class="project-update" aria-labelledby="paperpmf-update-title">
-    <p class="project-update-label">[new project / paperpmf.com]</p>
-    <p class="project-update-headline" id="paperpmf-update-title">Test the signal before you fund the launch.</p>
-    <p class="project-update-body">A rapid synthetic purchase-intent diagnostic for product concepts.</p>
-    <a class="project-update-link" href="https://paperpmf.com/?utm_source=abinthomas.in&amp;utm_medium=referral&amp;utm_campaign=paperpmf_crosspromo_2026&amp;utm_content=project_update#diagnostic-intake">run a free 10-person diagnostic →</a>
-  </aside>
+  <main>
+    <aside class="project-update" aria-labelledby="paperpmf-update-title">
+      <p class="project-update-label">[new project / paperpmf.com]</p>
+      <p class="project-update-headline" id="paperpmf-update-title">Test the signal before you fund the launch.</p>
+      <p class="project-update-body">A rapid synthetic purchase-intent diagnostic for product concepts.</p>
+      <a class="project-update-link" href="https://paperpmf.com/?utm_source=abinthomas.in&amp;utm_medium=referral&amp;utm_campaign=paperpmf_crosspromo_2026&amp;utm_content=project_update#diagnostic-intake">run a free 10-person diagnostic →</a>
+    </aside>
 
-  <div>
-    <p class="section-title">ai slop</p>
-    <ul>
-      <li><a href="https://abinthomas.in/repo2txt/">repo2txt</a> &#11049; <a href="https://github.com/abinthomasonline/repo2txt">code</a></li>
-      <li><a href="https://abinthomas.in/repo2txt-classic/">repo2txt-classic</a> &#11049; <a href="https://github.com/abinthomasonline/repo2txt-classic">code</a></li>
-      <li><a href="https://abinthomas.in/forensic-sketch-ai/">forensic-sketch-ai</a> &#11049; <a href="https://github.com/abinthomasonline/forensic-sketch-ai">code</a></li>
-      <li><a href="https://github.com/abinthomasonline/gpu-stat">gpu-stat</a></li>
-    </ul>
-  </div>
+    <section aria-labelledby="projects-heading">
+      <h2 class="section-title" id="projects-heading">ai slop</h2>
+      <ul>
+        <li><a href="https://abinthomas.in/repo2txt/">repo2txt</a> &#11049; <a href="https://github.com/abinthomasonline/repo2txt">code</a></li>
+        <li><a href="https://repo2txt.simplebasedomain.com/">repo2txt-classic</a> &#11049; <a href="https://github.com/abinthomasonline/repo2txt-classic">code</a></li>
+        <li><a href="https://abinthomas.in/forensic-sketch-ai/">forensic-sketch-ai</a> &#11049; <a href="https://github.com/abinthomasonline/forensic-sketch-ai">code</a></li>
+        <li><a href="https://github.com/abinthomasonline/gpu-stat">gpu-stat</a></li>
+      </ul>
+    </section>
+  </main>
 
   <script>
     function getPreferredTheme() {
