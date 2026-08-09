@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>The Reservation Rule Nobody Told You About | Abin Thomas</title>
+  <meta name="description" content="Same merit list. Same quotas. A different counting rule can produce a very different result.">
+  <meta name="author" content="Abin Thomas">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f7f6f1">
+  <link rel="canonical" href="https://abinthomas.in/blog/reservation-allocation/">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Abin Thomas">
+  <meta property="og:title" content="The Reservation Rule Nobody Told You About">
+  <meta property="og:description" content="Same merit list. Same quotas. A different counting rule can produce a very different result.">
+  <meta property="og:url" content="https://abinthomas.in/blog/reservation-allocation/">
+  <meta property="og:locale" content="en_IN">
+  <meta property="article:published_time" content="2026-08-09T00:00:00+05:30">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Reservation Rule Nobody Told You About">
+  <meta name="twitter:description" content="Same merit list. Same quotas. A different counting rule can produce a very different result.">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "The Reservation Rule Nobody Told You About",
+      "description": "Same merit list. Same quotas. A different counting rule can produce a very different result.",
+      "datePublished": "2026-08-09T00:00:00+05:30",
+      "author": {
+        "@type": "Person",
+        "name": "Abin Thomas",
+        "url": "https://abinthomas.in/"
+      },
+      "mainEntityOfPage": "https://abinthomas.in/blog/reservation-allocation/"
+    }
+  </script>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var savedTheme;
+      root.classList.add("js");
+      try {
+        savedTheme = localStorage.getItem("theme");
+      } catch (error) {
+        savedTheme = null;
+      }
+      var initialTheme = savedTheme === "dark" || savedTheme === "light"
+        ? savedTheme
+        : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      root.classList.toggle("dark", initialTheme === "dark");
+    }());
+  </script>
+</head>
+<body>
+  <header class="reader-toolbar">
+    <a class="brand" href="/" aria-label="Back to homepage">← HOME</a>
+
+    <div class="mode-switch" role="group" aria-label="Reading mode">
+      <button type="button" data-set-mode="cards" aria-pressed="false" title="One idea at a time">Cards</button>
+      <button type="button" data-set-mode="article" aria-pressed="false" title="Read as one page">Article</button>
+    </div>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Use dark theme" title="Use dark theme">
+      <span data-theme-icon aria-hidden="true">☾</span>
+      <span data-theme-label>Dark</span>
+    </button>
+  </header>
+
+  <main class="reader-main">
+    <article
+      class="story-deck"
+      id="storyDeck"
+      aria-label="The reservation rule nobody told you about"
+      aria-roledescription="carousel"
+    >
+      <section class="story-card cover-card" id="seen-this" data-title="Seen this screenshot?">
+        <div class="card-inner">
+          <p class="card-kicker">RESERVATION / THE HIDDEN RULE</p>
+          <h1>The reservation rule nobody told you about</h1>
+          <p class="deck-copy">Same merit list. Same quotas. A different counting rule can produce a very different result.</p>
+
+          <figure class="notice-shot">
+            <div class="notice-paper" role="img" aria-label="Recreated NEET-PG 2025 notice showing a revised qualifying score of minus 40 out of 800 for SC, ST and OBC candidates">
+              <div class="notice-head"><b>NBEMS</b><span>13.01.2026</span></div>
+              <p>REVISED NEET-PG 2025 CUT-OFF</p>
+              <div class="notice-row"><span>General / EWS</span><span>103</span></div>
+              <div class="notice-row"><span>General PwBD</span><span>90</span></div>
+              <div class="notice-row notice-focus"><b>SC / ST / OBC</b><mark>−40</mark></div>
+            </div>
+            <figcaption>
+              This was the qualifying mark to enter counselling. <a href="https://www.natboard.edu.in/viewNotice.php?NBE=NlZON01lQnErVzZvRXJoM2s1dHBXZz09">Official notice</a>
+            </figcaption>
+          </figure>
+
+          <p class="lead">You must have seen screenshots like this going viral.</p>
+          <p>But do you know the mathematical impossibility hiding behind the cutoff debate?</p>
+          <p><strong>Under the current rule, a reserved cutoff can never be higher than the <code>Open</code> cutoff.</strong></p>
+          <p class="swipe-hint">You are going to learn something new today. Swipe left. →</p>
+        </div>
+      </section>
+
+      <section class="story-card" id="puzzle" data-title="How many reserved seats remain?">
+        <div class="card-inner narrow-card">
+          <p class="card-kicker">01 / QUICK QUESTION</p>
+          <h2>How many reserved seats are left?</h2>
+          <p class="puzzle-copy">An exam has 100 vacancies, of which 50 are reserved for specified categories. The first 50 candidates selected purely on merit rank list include 30 general-category candidates and 20 reserved-category candidates. How many of the 50 reserved vacancies remain?</p>
+        </div>
+      </section>
+
+      <section class="story-card answer-card" id="answer" data-title="All 50 are still left">
+        <div class="card-inner narrow-card">
+          <p class="card-kicker">02 / THE REVEAL</p>
+          <h2>All <span class="accent-number">50</span> are still left</h2>
+          <p>Under the current rule, the 50 <code>Open</code> seats are filled first.</p>
+          <p>So the first 50 candidates in the rank list fill those Open seats. This includes 20 reserved-category candidates.</p>
+          <p>Those 20 candidates do not use any reserved seats. The 50 reserved seats are then filled by another 50 reserved-category candidates.</p>
+
+          <div class="result-strip" role="img" aria-label="The final list contains 30 General candidates and 70 reserved-category candidates">
+            <span class="general-result">30 General</span>
+            <span class="reserved-result">70 reserved-category</span>
+          </div>
+
+          <p>Final list: 30 General candidates and 70 reserved-category candidates.</p>
+          <p>The reservation percentage was <code>50%</code>. The final representation became <code>70%</code>.</p>
+          <p class="strong-line">Not a software error. This is the rule.</p>
+        </div>
+      </section>
+
+      <section class="story-card visual-card" id="over-and-above" data-title="The current rule">
+        <div class="card-inner">
+          <div class="visual-heading">
+            <div>
+              <p class="card-kicker">03 / WATCH IT</p>
+              <h2>Open fills first</h2>
+            </div>
+            <p>This is called <strong>over and above</strong>. Winning an <code>Open</code> seat does not use up a reserved seat.</p>
+          </div>
+
+          <div class="animation-layout">
+            <div class="animation-shell portrait-shell">
+              <iframe
+                class="animation-frame portrait-frame"
+                data-animation-frame
+                data-src="/blog/reservation-allocation/animation/index.html?view=oa&amp;compact=1&amp;controls=0&amp;speed=1.5"
+                title="Over-and-above allocation animation"
+              ></iframe>
+            </div>
+
+            <aside class="vacancy-panel" data-progress-view="oa">
+              <div class="vacancy-heading">
+                <span>Vacancies filled</span>
+                <strong><span data-total>0</span>/100</strong>
+              </div>
+
+              <div class="vacancy-row" data-pool="open" data-capacity="50">
+                <div><span>Open</span><b><span data-count>0</span>/50</b></div>
+                <div class="vacancy-track"><span data-fill class="fill-open"></span></div>
+                <small>cutoff <span data-cutoff>-</span></small>
+              </div>
+              <div class="vacancy-row" data-pool="obc" data-capacity="27">
+                <div><span>OBC</span><b><span data-count>0</span>/27</b></div>
+                <div class="vacancy-track"><span data-fill class="fill-obc"></span></div>
+                <small>cutoff <span data-cutoff>-</span></small>
+              </div>
+              <div class="vacancy-row" data-pool="scst" data-capacity="23">
+                <div><span>SC/ST</span><b><span data-count>0</span>/23</b></div>
+                <div class="vacancy-track"><span data-fill class="fill-scst"></span></div>
+                <small>cutoff <span data-cutoff>-</span></small>
+              </div>
+
+              <div class="animation-controls">
+                <button type="button" data-animation-action="toggle">Pause</button>
+                <button type="button" data-animation-action="replay">Replay</button>
+              </div>
+            </aside>
+          </div>
+
+          <p class="visual-note">Candidate colour shows identity. Bars show vacancy pools.</p>
+        </div>
+      </section>
+
+      <section class="story-card" id="missed-detail" data-title="The detail both camps miss">
+        <div class="card-inner narrow-card">
+          <p class="card-kicker">04 / THE MISSED DETAIL</p>
+          <h2>The detail both camps miss</h2>
+          <p>We argue about reservation every day.</p>
+          <p>Almost always as “for” or “against”.</p>
+          <p>Almost never about how seats are counted.</p>
+
+          <blockquote>Most elected representatives, loud public voices and judges do not know this counting rule or its extreme consequences.</blockquote>
+
+          <p>Yet this small rule decides real outcomes.</p>
+          <p>We rarely test the extreme result before accepting the rule.</p>
+        </div>
+      </section>
+
+      <section class="story-card" id="cutoff-gap" data-title="Why cutoffs cannot cross">
+        <div class="card-inner narrow-card">
+          <p class="card-kicker">05 / CONSEQUENCE</p>
+          <h2>Why the cutoffs cannot cross</h2>
+
+          <div class="cutoff-demo" data-cutoff-demo>
+            <svg class="cutoff-demo__stage" viewBox="0 0 600 245" role="img" aria-labelledby="cutoffDemoTitle cutoffDemoDescription">
+              <title id="cutoffDemoTitle">Open seats fill before reserved seats</title>
+              <desc id="cutoffDemoDescription">Twelve candidates arrive in merit order. Five Open seats fill first with both General and reserved-category candidates, ending at cutoff 86. General scores 83 and 77 are then discarded while five reserved-category candidates fill the reserved seats, ending at cutoff 65.</desc>
+              <g class="cutoff-demo__scene" data-cutoff-demo-scene>
+                <text x="33" y="35" class="cutoff-demo__row-label cutoff-demo__row-label--open">OPEN SEATS</text>
+                <g data-cutoff-demo-seats="open"></g>
+                <text x="33" y="136" class="cutoff-demo__row-label cutoff-demo__row-label--reserved">RESERVED SEATS</text>
+                <g data-cutoff-demo-seats="reserved"></g>
+
+                <text x="310" y="52" text-anchor="middle" class="cutoff-demo__cutoff-label">OPEN CUTOFF</text>
+                <text x="310" y="82" text-anchor="middle" class="cutoff-demo__cutoff-value cutoff-demo__cutoff-value--open" data-cutoff-demo-open-cutoff>-</text>
+                <text x="310" y="153" text-anchor="middle" class="cutoff-demo__cutoff-label">RESERVED CUTOFF</text>
+                <text x="310" y="183" text-anchor="middle" class="cutoff-demo__cutoff-value cutoff-demo__cutoff-value--reserved" data-cutoff-demo-reserved-cutoff>-</text>
+
+                <text x="385" y="91" class="cutoff-demo__queue-label">MERIT QUEUE</text>
+                <line x1="360" y1="122" x2="594" y2="122" class="cutoff-demo__queue-line"></line>
+                <g data-cutoff-demo-candidates></g>
+              </g>
+            </svg>
+            <div class="animation-controls cutoff-demo__controls">
+              <button type="button" data-cutoff-demo-action="toggle" aria-label="Pause cutoff animation"><span aria-hidden="true">⏯</span> <span data-cutoff-demo-control-label>Pause</span></button>
+              <button type="button" data-cutoff-demo-action="replay">↻ Replay</button>
+            </div>
+            <p class="visually-hidden" data-cutoff-demo-status>Allocation ready.</p>
+          </div>
+
+          <p><code>Open</code> takes the highest scores first. After it is full, General candidates are skipped while reserved seats fill from lower ranks.</p>
+          <p>If you were as naive as me, you may have thought the cutoffs would move closer once every community was adequately represented.</p>
+          <p class="strong-line">Stop waiting. The current rule makes crossing impossible.</p>
+        </div>
+      </section>
+
+      <section class="story-card" id="performance" data-title="What happens over time?">
+        <div class="card-inner narrow-card">
+          <p class="card-kicker">06 / CONSEQUENCE</p>
+          <h2>What happens over time?</h2>
+          <p>Take <code>10</code> seats. Five are <code>Open</code> and five are reserved.</p>
+          <p>Earlier, only one candidate from the community reached the top five. After years of reservation, let's say three candidates do now.</p>
+
+          <div class="seat-progress" role="img" aria-label="Before, Open has four General and one reserved-category candidate, followed by five reserved seats. After improvement, Open has two General and three reserved-category candidates, followed by the same five reserved seats.">
+            <div class="seat-progress-row">
+              <small>BEFORE</small>
+              <div class="seat-groups">
+                <div class="seat-group open-group"><span class="seat-group-label">5 OPEN</span><i class="person-dot general-dot"></i><i class="person-dot reserved-dot"></i><i class="person-dot general-dot"></i><i class="person-dot general-dot"></i><i class="person-dot general-dot"></i></div>
+                <div class="seat-group reserved-group"><span class="seat-group-label">5 RESERVED</span><i class="person-dot reserved-dot"></i><i class="person-dot reserved-dot"></i><i class="person-dot reserved-dot"></i><i class="person-dot reserved-dot"></i><i class="person-dot reserved-dot"></i></div>
+              </div>
+              <strong>4G / 6R</strong>
+            </div>
+            <div class="seat-progress-arrow"><span>two more reach Open</span><b>↓</b></div>
+            <div class="seat-progress-row improved-row">
+              <small>AFTER</small>
+              <div class="seat-groups">
+                <div class="seat-group open-group"><span class="seat-group-label">5 OPEN</span><i class="person-dot reserved-dot improved-dot"></i><i class="person-dot general-dot"></i><i class="person-dot reserved-dot improved-dot"></i><i class="person-dot reserved-dot"></i><i class="person-dot general-dot"></i></div>
+                <div class="seat-group reserved-group"><span class="seat-group-label">5 RESERVED</span><i class="person-dot reserved-dot"></i><i class="person-dot reserved-dot"></i><i class="person-dot reserved-dot"></i><i class="person-dot reserved-dot"></i><i class="person-dot reserved-dot"></i></div>
+              </div>
+              <strong>2G / 8R</strong>
+            </div>
+          </div>
+
+          <p>The community now gets three <code>Open</code> seats and the same five reserved seats. Total: eight out of ten.</p>
+          <p><strong>The two extra achievements are added on top of the quota, not counted inside it.</strong></p>
+        </div>
+      </section>
+
+      <section class="story-card visual-card" id="minimum-guarantee" data-title="My proposal">
+        <div class="card-inner">
+          <div class="visual-heading">
+            <div>
+              <p class="card-kicker">07 / MY PROPOSAL</p>
+              <h2>Horizontal allocation</h2>
+            </div>
+            <p>Here is my proposal. Some call this counting rule a <strong>minimum guarantee</strong>.</p>
+          </div>
+
+          <div class="animation-layout">
+            <div class="animation-shell portrait-shell">
+              <iframe
+                class="animation-frame portrait-frame"
+                data-animation-frame
+                data-src="/blog/reservation-allocation/animation/index.html?view=mg&amp;compact=1&amp;controls=0&amp;speed=1.5"
+                title="Horizontal-allocation animation"
+              ></iframe>
+            </div>
+
+            <aside class="vacancy-panel" data-progress-view="mg">
+              <div class="vacancy-heading">
+                <span>Vacancies filled</span>
+                <strong><span data-total>0</span>/100</strong>
+              </div>
+
+              <div class="vacancy-row" data-pool="open" data-capacity="50">
+                <div><span>Open</span><b><span data-count>0</span>/50</b></div>
+                <div class="vacancy-track"><span data-fill class="fill-open"></span></div>
+                <small>cutoff <span data-cutoff>-</span></small>
+              </div>
+              <div class="vacancy-row" data-pool="obc" data-capacity="27">
+                <div><span>OBC</span><b><span data-count>0</span>/27</b></div>
+                <div class="vacancy-track"><span data-fill class="fill-obc"></span></div>
+                <small>cutoff <span data-cutoff>-</span></small>
+              </div>
+              <div class="vacancy-row" data-pool="scst" data-capacity="23">
+                <div><span>SC/ST</span><b><span data-count>0</span>/23</b></div>
+                <div class="vacancy-track"><span data-fill class="fill-scst"></span></div>
+                <small>cutoff <span data-cutoff>-</span></small>
+              </div>
+
+              <div class="animation-controls">
+                <button type="button" data-animation-action="toggle">Pause</button>
+                <button type="button" data-animation-action="replay">Replay</button>
+              </div>
+            </aside>
+          </div>
+
+          <p class="visual-note">Fill each community's reserved vacancies first. General candidates use <code>Open</code> only. Once a minimum is full, later candidates from that community can still win Open.</p>
+        </div>
+      </section>
+
+      <section class="story-card open-card" id="open-for-all" data-title="Open stays open">
+        <div class="card-inner narrow-card">
+          <p class="card-kicker">08 / THE OBVIOUS QUESTION</p>
+          <h2>“But Open is for everyone!”</h2>
+          <p class="big-answer">Correct.</p>
+          <p>And it stays that way.</p>
+          <p>Horizontal allocation does not turn <code>Open</code> into General.</p>
+
+          <div class="open-gate" role="img" aria-label="After the OBC minimum reaches 27 of 27, General, OBC and SC ST candidates can all continue to compete for Open seats.">
+            <div class="minimum-met"><span>OBC MINIMUM</span><strong>27 / 27 ✓</strong></div>
+            <div class="gate-candidates">
+              <span class="gate-general"><i>G</i><small>General</small></span>
+              <span class="gate-obc"><i>O</i><small>OBC</small></span>
+              <span class="gate-scst"><i>S</i><small>SC/ST</small></span>
+            </div>
+            <div class="gate-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="open-lane"><strong>OPEN</strong><span>highest rank wins</span><b>→</b></div>
+          </div>
+
+          <p>Meeting the minimum does not block anyone. It guarantees a minimum. It does not set a maximum.</p>
+        </div>
+      </section>
+
+      <section class="story-card" id="ideal-world" data-title="The ideal-world test">
+        <div class="card-inner">
+          <p class="card-kicker">09 / THOUGHT EXPERIMENT</p>
+          <h2>Try the ideal-world test</h2>
+          <p>Imagine the merit list already matches the population.</p>
+
+          <div class="composition-visual">
+            <div class="composition-row">
+              <small>TOP 100</small>
+              <div class="stacked-bar" aria-label="28 General, 47 OBC, 25 SC ST">
+                <span class="seg-general" style="--share:28.3">28</span>
+                <span class="seg-obc" style="--share:46.5">47</span>
+                <span class="seg-scst" style="--share:25.2">25</span>
+              </div>
+            </div>
+            <div class="composition-split">
+              <div>
+                <small>OVER AND ABOVE</small>
+                <div class="stacked-bar" aria-label="14 General, 51 OBC, 35 SC ST">
+                  <span class="seg-general" style="--share:14.3">14</span>
+                  <span class="seg-obc" style="--share:50.5">51</span>
+                  <span class="seg-scst" style="--share:35.2">35</span>
+                </div>
+              </div>
+              <div>
+                <small>HORIZONTAL ALLOCATION</small>
+                <div class="stacked-bar" aria-label="28 General, 47 OBC, 25 SC ST">
+                  <span class="seg-general" style="--share:28.3">28</span>
+                  <span class="seg-obc" style="--share:46.5">47</span>
+                  <span class="seg-scst" style="--share:25.2">25</span>
+                </div>
+              </div>
+            </div>
+            <div class="composition-key"><span>General</span><span>OBC</span><span>SC/ST</span></div>
+          </div>
+
+          <p><strong>Over and above:</strong> The first 50 are selected in <code>Open</code>. Then 27 OBC seats and 23 SC/ST seats are filled separately. Final: 14 General, 51 OBC and 35 SC/ST.</p>
+          <p><strong>Horizontal allocation:</strong> OBC and SC/ST achievements count towards their minimums. The top 100 already cross both minimums. Final: 28 General, 47 OBC and 25 SC/ST.</p>
+          <p class="strong-line">Same merit list. Very different result.</p>
+          <p class="fine-print article-only">Simplified illustration: <code>50.5%</code> Open, <code>27%</code> OBC, and <code>22.5%</code> combined SC/ST. The population mix is only for this example. It is not from a current caste census.</p>
+        </div>
+      </section>
+
+      <section class="story-card extreme-card" id="extreme" data-title="Take it to the extreme">
+        <div class="card-inner narrow-card">
+          <p class="card-kicker">10 / CORNER CASE</p>
+          <h2>Take it to the extreme</h2>
+          <div class="hundred-mark">100%</div>
+          <p>This is a mental exercise, not a forecast.</p>
+          <p>Suppose reserved-community candidates win every <code>Open</code> seat.</p>
+          <p><strong>Every selected person can now belong to a reserved community.</strong></p>
+          <p>At this extreme, the basic representation and participation argument for reservation crumbles. A rule meant to prevent exclusion can produce a list that excludes every General candidate.</p>
+        </div>
+      </section>
+
+      <section class="story-card" id="creamy-layer" data-title="Creamy layer and Open">
+        <div class="card-inner narrow-card">
+          <p class="card-kicker">11 / POPULAR REFORMS</p>
+          <h2>Creamy layer does not change this arithmetic</h2>
+          <p>Creamy layer, family limits and voluntary surrender can change who receives a reserved seat.</p>
+          <p>They may help the benefit reach a poorer family or someone lower in the category list. But <code>Open</code> is still filled first.</p>
+
+          <div class="three-step">
+            <div><b>1</b><span>A candidate becomes ineligible for a reserved seat because of creamy layer, a family limit or voluntary surrender.</span></div>
+            <div><b>2</b><span>If their rank is high enough, they can still win an Open seat.</span></div>
+            <div><b>3</b><span>Another eligible candidate still fills the reserved seat.</span></div>
+          </div>
+
+          <p class="strong-line">This changes who gets the reserved seat. It does not create another Open seat for a General candidate.</p>
+        </div>
+      </section>
+
+      <section class="story-card" id="missing-number" data-title="Publish useful numbers">
+        <div class="card-inner narrow-card">
+          <p class="card-kicker">12 / THE FEEDBACK LOOP</p>
+          <h2>Publish numbers people can understand</h2>
+          <p>A reserved cutoff hides the category’s best performers because they were already counted under <code>Open</code>.</p>
+          <p>Want to know whether performance is improving? Publish these four numbers after every exam:</p>
+
+          <div class="metric-grid example-metrics">
+            <div><strong>12 of 39</strong><span>selected OBC candidates came through Open</span></div>
+            <div><strong>27 of 39</strong><span>selected OBC candidates came through OBC seats</span></div>
+            <div><strong>8 of 31</strong><span>selected SC/ST candidates came through Open</span></div>
+            <div><strong>23 of 31</strong><span>selected SC/ST candidates came through SC/ST seats</span></div>
+          </div>
+
+          <p class="fine-print">Numbers from this illustration. They are not results from a real exam.</p>
+          <p class="strong-line">Cutoffs alone cannot show whether the policy is working.</p>
+        </div>
+      </section>
+
+      <section class="story-card" id="legal-choice" data-title="This was a legal choice">
+        <div class="card-inner narrow-card">
+          <p class="card-kicker">13 / HOW IT STARTED</p>
+          <h2>This was a legal choice</h2>
+          <p>The Constitution allows reservation. It does not print this step-by-step allocation method.</p>
+
+          <ol class="mini-timeline">
+            <li><time>1989</time><span>The Union says reserved-category candidates selected on merit will not be counted against reserved seats.</span></li>
+            <li><time>1992</time><span>Nine judges uphold this rule in <i>Indra Sawhney</i>.</span></li>
+            <li class="article-only"><time>1995</time><span><i>R. K. Sabharwal</i> confirms the rule for government jobs.</span></li>
+            <li><time>1996</time><span><i>Ritesh Sah</i> applies the same rule to medical admissions.</span></li>
+            <li class="article-only"><time>2020</time><span><i>Saurav Yadav</i>: Open belongs to everyone.</span></li>
+          </ol>
+
+          <p>This is not a portal bug. It is a deliberate legal rule. Its extreme result is rarely discussed in public.</p>
+        </div>
+      </section>
+
+      <section class="story-card" id="certificates" data-title="The candidate does not choose">
+        <div class="card-inner narrow-card">
+          <p class="card-kicker">14 / PROCESS IS NOT POLICY</p>
+          <h2>The candidate does not choose</h2>
+          <p>A common misconception is that candidates choose after the exam whether to use <code>Open</code> or reservation.</p>
+          <p>That is not how it works.</p>
+
+          <div class="allocation-reality" role="img" aria-label="The system fills Open first, automatically places every sufficiently high-ranked candidate there, and leaves the complete reserved pool to be filled later.">
+            <div class="allocation-myth"><small>COMMON MYTH</small><strong>Candidate chooses Open or quota after the exam</strong><b>✕</b></div>
+            <ol>
+              <li><span>1</span><strong>Open fills first by rank</strong></li>
+              <li><span>2</span><strong>High-ranked reserved candidate goes into Open</strong></li>
+              <li><span>3</span><strong>The community quota remains untouched</strong></li>
+            </ol>
+          </div>
+
+          <p>The candidate does not choose to save the quota. The rule does it automatically.</p>
+          <p>Checking certificates earlier will not change this. Only changing the counting rule will.</p>
+        </div>
+      </section>
+
+      <section class="story-card" id="change" data-title="Changing it will not be easy">
+        <div class="card-inner narrow-card">
+          <p class="card-kicker">15 / THE LEGAL ROUTE</p>
+          <h2>Changing it will not be easy</h2>
+
+          <div class="route-grid">
+            <div>
+              <small>ROUTE 1</small>
+              <strong>Supreme Court</strong>
+              <p><i>Indra Sawhney</i> had nine judges. To reverse it through the courts, a larger bench would be needed, most likely eleven judges.</p>
+            </div>
+            <div>
+              <small>ROUTE 2</small>
+              <strong>Constitution</strong>
+              <p>Parliament would need to amend the Constitution. Governments would then need to rewrite admission and recruitment rules.</p>
+            </div>
+          </div>
+
+          <p class="fine-print article-only">An amendment must pass each House with a majority of its total membership and two-thirds of members present and voting. It can still face basic-structure review.</p>
+          <p class="strong-line">A portal update cannot override this doctrine.</p>
+        </div>
+      </section>
+
+      <section class="story-card final-card visual-card" id="right-question" data-title="Ask the right question">
+        <div class="card-inner">
+          <div class="visual-heading final-heading">
+            <div>
+              <p class="card-kicker">16 / THE QUESTION WE MISSED</p>
+              <h2>Now ask the right question</h2>
+            </div>
+            <p>“Do we need reservation?” may not be the right question. Start with the rule.</p>
+          </div>
+
+          <div class="animation-shell compare-shell">
+            <iframe
+              class="animation-frame compare-frame"
+              data-animation-frame
+              data-src="/blog/reservation-allocation/animation/index.html?view=compare&amp;compact=1&amp;controls=0&amp;speed=1.5"
+              title="Over-and-above and horizontal allocation compared"
+            ></iframe>
+          </div>
+          <div class="animation-controls compare-controls">
+            <button type="button" data-animation-action="toggle">Pause</button>
+            <button type="button" data-animation-action="replay">Replay</button>
+          </div>
+
+          <blockquote class="final-question">When <code>27</code> seats are reserved for a community, should its <code>Open</code> winners count inside those 27? Or should they be added on top?</blockquote>
+          <p class="closing-copy">Same ranks. Different rule. Different final list.</p>
+
+          <details class="sources-panel">
+            <summary>Sources and important limits</summary>
+            <div>
+              <p><strong>Two cutoffs:</strong> the NEET-PG image is a counselling-eligibility cutoff. The maths here is about the last score used to fill a vacancy pool from one common merit list.</p>
+              <p><strong>Open is not General:</strong> General describes a candidate. Open describes a seat that any eligible candidate can win.</p>
+              <p><strong>Naming:</strong> horizontal reservations usually cover cross-cutting groups such as women or persons with disabilities. This proposal borrows their minimum-counting method for vertical caste categories.</p>
+              <p><strong>Simplified animation:</strong> SC and ST are combined; EWS, preferences, rounds, relaxations and state rules are omitted.</p>
+              <ul>
+                <li><a href="https://documents.doptcirculars.nic.in/D2/D02adm/Chapter-08.pdf">DoPT archive: 22 May 1989 instruction</a></li>
+                <li><a href="https://api.sci.gov.in/supremecourt/2015/12301/12301_2015_12_1502_35291_Judgement_28-Apr-2022.pdf">Supreme Court: key <i>Indra Sawhney</i> and <i>R. K. Sabharwal</i> passages</a></li>
+                <li><a href="https://api.sci.gov.in/jonew/judis/15988.pdf">Supreme Court: <i>Ritesh R. Sah</i></a></li>
+                <li><a href="https://api.sci.gov.in/jonew/judis/41069.pdf">Supreme Court: <i>Samta Aandolan Samiti</i></a></li>
+                <li><a href="https://api.sci.gov.in/supremecourt/2019/44789/44789_2019_34_1501_25207_Judgement_18-Dec-2020.pdf">Supreme Court: <i>Saurav Yadav</i></a></li>
+                <li><a href="https://www.ideasforindia.in/topics/governance/design-choices-for-implementing-affirmative-action">Ashutosh Thakur: design choices for affirmative action</a></li>
+                <li><a href="https://arxiv.org/abs/2305.11758">Aygün and Turhan: over-and-above implementation</a></li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <nav class="deck-nav" aria-label="Story cards">
+    <div class="deck-progress" aria-hidden="true"><span id="deckProgressFill"></span></div>
+    <button type="button" id="previousCard" aria-label="Previous card">←</button>
+    <div class="deck-status">
+      <span id="cardCount">01 / 17</span>
+      <strong id="cardTitle">Seen this screenshot?</strong>
+      <span class="card-scroll-cue" id="cardScrollCue" aria-hidden="true">Scroll ↓</span>
+    </div>
+    <button type="button" id="nextCard" aria-label="Next card">→</button>
+  </nav>
+
+  <p class="visually-hidden" id="cardAnnouncement" aria-live="polite"></p>
+  <script src="article.js"></script>
+  <script src="cutoff-demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Dump takes | Abin Thomas</title>
+  <meta name="description" content="Writing by Abin Thomas.">
+  <meta name="author" content="Abin Thomas">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://abinthomas.in/blog/">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script>
+    (function () {
+      var saved = null;
+      try {
+        saved = localStorage.getItem("theme");
+      } catch (error) {
+        saved = null;
+      }
+      var theme = saved === "dark" || saved === "light"
+        ? saved
+        : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.classList.toggle("dark", theme === "dark");
+    }());
+  </script>
+</head>
+<body>
+  <header>
+    <div class="page-bar">
+      <a class="home-link" href="/">← HOME</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme">
+        <span data-theme-icon aria-hidden="true">☾</span>
+        <span data-theme-label>Dark</span>
+      </button>
+    </div>
+    <h1 class="page-title">dump takes</h1>
+  </header>
+
+  <main class="site-section">
+    <ol class="post-list">
+      <li><time datetime="2026-08-09">2026-08-09</time><a href="/blog/reservation-allocation/">the reservation rule nobody told you about</a></li>
+      <li><time datetime="2025-11-28">2025-11-28</time><a href="/blog/software-repair-economy/">when software becomes cheaper to replace than repair</a></li>
+    </ol>
+  </main>
+
+  <script src="/assets/js/theme.js"></script>
+</body>
+</html>
