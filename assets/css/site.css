@@ -6,6 +6,10 @@
   --muted: #666666;
   --line: #d5d5d5;
   --accent: #0000ee;
+  --status-online: #16803a;
+  --status-degraded: #a85b00;
+  --status-offline: #bd2525;
+  --status-unknown: #777777;
   --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
@@ -18,6 +22,10 @@ body.dark {
   --muted: #aaaaaa;
   --line: #555555;
   --accent: #66b3ff;
+  --status-online: #4ade80;
+  --status-degraded: #fbbf24;
+  --status-offline: #fb7185;
+  --status-unknown: #a3a3a3;
 }
 
 * {
@@ -156,6 +164,68 @@ button:focus-visible {
   min-height: 32px;
   align-items: center;
   color: inherit;
+}
+
+.node-status-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.node-status-item {
+  display: grid;
+  min-width: 160px;
+  grid-template-columns: 14px auto auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.node-status-light {
+  color: var(--status-unknown);
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--paper);
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 0 1px currentColor;
+}
+
+.node-status-item[data-state="online"] .node-status-light {
+  color: var(--status-online);
+}
+
+.node-status-item[data-state="degraded"] .node-status-light {
+  color: var(--status-degraded);
+}
+
+.node-status-item[data-state="offline"] .node-status-light {
+  color: var(--status-offline);
+}
+
+.node-status-name {
+  font-weight: 750;
+}
+
+.node-status-state {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.node-status-state::before {
+  content: "· ";
+}
+
+.node-status-note {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.node-status-note time::before {
+  content: " ";
 }
 
 .item-list,

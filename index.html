@@ -112,6 +112,27 @@
   </header>
 
   <main>
+    <section class="site-section node-status" aria-labelledby="node-status-heading" data-node-status-root>
+      <h2 class="section-title" id="node-status-heading">homelab</h2>
+      <ul class="node-status-list" aria-label="Homelab node status">
+        <li class="node-status-item" data-node-id="hs-hp" data-state="unknown">
+          <span class="node-status-light" aria-hidden="true"></span>
+          <span class="node-status-name">hs-hp</span>
+          <span class="node-status-state" data-node-state>checking</span>
+        </li>
+        <li class="node-status-item" data-node-id="hs-mac" data-state="unknown">
+          <span class="node-status-light" aria-hidden="true"></span>
+          <span class="node-status-name">hs-mac</span>
+          <span class="node-status-state" data-node-state>checking</span>
+        </li>
+      </ul>
+      <p class="node-status-note">
+        <span data-node-status-message role="status" aria-live="polite" aria-atomic="true">Checking node status…</span>
+        <time data-node-status-updated hidden></time>
+      </p>
+      <noscript><p class="node-status-note">Node status requires JavaScript.</p></noscript>
+    </section>
+
     <section class="site-section" aria-labelledby="projects-heading">
       <h2 class="section-title" id="projects-heading">ai slop</h2>
       <ul class="item-list">
@@ -134,5 +155,6 @@
   </main>
 
   <script src="/assets/js/theme.js"></script>
+  <script src="/assets/js/node-status.js"></script>
 </body>
 </html>
