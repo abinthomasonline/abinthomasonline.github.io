@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="500" viewBox="0 0 680 500" role="img" aria-labelledby="wiring-title wiring-desc">
+  <title id="wiring-title">Router watchdog: connections in this build</title>
+  <desc id="wiring-desc">Logical connections, not physical header positions. An unswitched USB supply powers the ESP32. ESP32 VIN connects to relay VCC, GND to GND, and GPIO26 to IN. The relay is active low. The router adapter's positive DC lead goes through COM and the normally closed NC contact to the router. The negative lead runs directly to the router. NO is unused. The relay is shown released, with COM and NC connected.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #222; }
+    .title { font-size: 20px; font-weight: 650; }
+    .label { font-size: 17px; font-weight: 600; }
+    .pin { font: 15px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .note { font-size: 15px; fill: #666; }
+    .box { fill: #fafafa; stroke: #b9b9b9; stroke-width: 1.5; }
+    .wire { fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .supply { stroke: #a64141; }
+    .return { stroke: #454545; }
+    .signal { stroke: #35739a; }
+    .terminal { fill: #fff; stroke-width: 2; }
+  </style>
+
+  <rect width="680" height="500" rx="8" fill="#fff"/>
+  <text x="24" y="31" class="title">Connections in this build</text>
+
+  <text x="112" y="65" class="note" text-anchor="middle">Unswitched USB</text>
+  <text x="656" y="65" class="note" text-anchor="end">Logical pins, not a header map</text>
+  <path d="M112 72v12m-4-5 4 5 4-5" class="wire return"/>
+
+  <rect x="24" y="84" width="176" height="172" rx="7" class="box"/>
+  <text x="40" y="112" class="label">ESP32</text>
+  <text x="184" y="149" text-anchor="end" class="pin">VIN</text>
+  <text x="184" y="189" text-anchor="end" class="pin">GND</text>
+  <text x="184" y="229" text-anchor="end" class="pin">GPIO26</text>
+
+  <rect x="440" y="84" width="216" height="172" rx="7" class="box"/>
+  <text x="456" y="112" class="label">Relay module</text>
+  <text x="456" y="149" class="pin">VCC</text>
+  <text x="456" y="189" class="pin">GND</text>
+  <text x="456" y="229" class="pin">IN</text>
+
+  <path d="M200 144h240" class="wire supply"/>
+  <path d="M200 184h240" class="wire return"/>
+  <path d="M200 224h240" class="wire signal"/>
+  <g class="terminal supply"><circle cx="200" cy="144" r="3"/><circle cx="440" cy="144" r="3"/></g>
+  <g class="terminal return"><circle cx="200" cy="184" r="3"/><circle cx="440" cy="184" r="3"/></g>
+  <g class="terminal signal"><circle cx="200" cy="224" r="3"/><circle cx="440" cy="224" r="3"/></g>
+  <text x="320" y="247" text-anchor="middle" class="note" style="fill:#35739a">LOW opens NC</text>
+
+  <path d="M548 256v18H340v16" fill="none" stroke="#999" stroke-width="1.5" stroke-dasharray="4 5"/>
+
+  <rect x="238" y="290" width="204" height="148" rx="7" class="box"/>
+  <text x="254" y="316" class="label">Relay contacts</text>
+
+  <rect x="24" y="319" width="144" height="103" rx="7" class="box"/>
+  <text x="40" y="344" class="label">Adapter</text>
+  <text x="152" y="369" text-anchor="end" class="pin">DC +</text>
+  <text x="152" y="405" text-anchor="end" class="pin">DC −</text>
+
+  <rect x="512" y="319" width="144" height="103" rx="7" class="box"/>
+  <text x="528" y="344" class="label">Router</text>
+  <text x="528" y="369" class="pin">DC +</text>
+  <text x="528" y="405" class="pin">DC −</text>
+
+  <path d="M168 364h104m0 0 112-20m0 0h96v20h32" class="wire supply"/>
+  <g class="terminal supply"><circle cx="168" cy="364" r="3"/><circle cx="272" cy="364" r="4"/><circle cx="384" cy="344" r="4"/><circle cx="512" cy="364" r="3"/></g>
+  <circle cx="384" cy="400" r="4" class="terminal return"/>
+  <text x="256" y="388" class="pin">COM</text>
+  <text x="398" y="371" class="pin">NC</text>
+  <text x="398" y="405" class="pin">NO</text>
+  <text x="384" y="426" text-anchor="middle" class="note">unused</text>
+
+  <path d="M168 400h22v56h300v-56h22" class="wire return"/>
+  <g class="terminal return"><circle cx="168" cy="400" r="3"/><circle cx="512" cy="400" r="3"/></g>
+  <text x="340" y="480" text-anchor="middle" class="note">Shown: coil released · COM–NC closed · router powered</text>
+</svg>

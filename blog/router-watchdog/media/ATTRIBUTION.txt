@@ -1,0 +1,18 @@
+Photograph credits
+
+build.jpg, build-small.jpg and ../og.jpg: Abin Thomas. Cropped/resized copies of the finished build photograph; location metadata removed.
+
+esp32.jpg: Mikroelec. Representative 38-pin USB-C development board photograph, trimmed and placed on a white background.
+https://www.mikroelec.com/product/697/esp32-wroom-38pin-type-c-cp2102-development-board
+
+relay.jpg: RoboticsDNA. Representative single-channel relay module photograph, resized and optimized.
+https://roboticsdna.in/product/1-channel-5v-10a-relay-control-board-module-with-optocoupler/
+
+microduck.jpg: Pollen Robotics, Microduck press kit. Resized photograph.
+https://pollen-robotics.com/microduck/press-kit/
+
+xteink-x4.jpg: CrossPoint contributors. Cropped to the left device from the project's menu comparison photograph, then resized.
+https://github.com/crosspoint-reader/crosspoint-reader/blob/develop/docs/images/comparison/menu.jpg
+The upstream MIT licence is included in CROSSPOINT-LICENSE.txt.
+
+wiring.svg: Original diagram of the connections reported for this build.
